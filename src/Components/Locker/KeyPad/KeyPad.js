@@ -1,3 +1,5 @@
+import React, { useEffect } from 'react';
+
 import PropTypes from 'prop-types';
 import { KeyPadGrid, KeyWrapper } from './KeyPad.Styles';
 
@@ -6,7 +8,7 @@ export const KeyPad = ({
 }) => {
   const keys = ['1', '2', '3', '4', '5', '6', '7', '8', '9', 'CLR', '0', '⇨'];
 
-  const handleKeyPress = (key) => {
+  const handleCLick = (key) => {
     if (key === 'CLR') {
       setCurrentInput('');
       return;
@@ -29,13 +31,30 @@ export const KeyPad = ({
     setCurrentInput(`${currentInput}${key}`.substr(-4));
   };
 
+  const handleKeyPress = (event) => {
+    if (keys.includes(event.key)) {
+      handleCLick(event.key);
+    } else if (event.key === 'Enter') {
+      handleCLick('⇨');
+    } else if (event.key === 'Backspace') {
+      handleCLick('CLR');
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('keydown', handleKeyPress);
+    return () => window.removeEventListener('keydown', handleKeyPress);
+  }, [handleKeyPress]);
+
   return (
-    <KeyPadGrid>
+    <KeyPadGrid
+      onKeyDown={handleKeyPress}
+    >
       {keys.map((key) => (
         <KeyWrapper
           key={key}
           onClick={() => {
-            handleKeyPress(key);
+            handleCLick(key);
           }}
         >
           {key}

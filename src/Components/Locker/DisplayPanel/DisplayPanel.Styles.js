@@ -26,4 +26,5 @@ export const Indicator = styled.div`
   border-radius: 50%;
   border: black 0.25rem solid;
   background-color: ${({ bgColor }) => bgColor};
+  transition: background-color 500ms ease-out;
 `;
