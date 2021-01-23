@@ -25,5 +25,5 @@ export const Indicator = styled.div`
   height: 3rem;
   border-radius: 50%;
   border: black 0.25rem solid;
-  background-color: green;
+  background-color: ${({ bgColor }) => bgColor};
 `;

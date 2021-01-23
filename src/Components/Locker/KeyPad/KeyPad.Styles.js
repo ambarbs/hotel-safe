@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 
 export const KeyPadGrid = styled.div`
-  //width: 60vw;
-  //height: 30vw;
   flex-basis: 40%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -14,13 +12,12 @@ export const KeyPadGrid = styled.div`
 `;
 
 export const KeyWrapper = styled.div`
-  //min-width: 10vw;
-  //min-height: 5vw;
   background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.75rem;
+  cursor: pointer;
 `;
 
 export const KeyPadWrapper = styled.div`
