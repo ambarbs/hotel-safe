@@ -21,6 +21,7 @@ module.exports = {
   rules: {
     'react/jsx-filename-extension': 0,
     'react/react-in-jsx-scope': 0,
+    'react/no-array-index-key': 'off',
     'import/prefer-default-export': 0,
     'no-unused-vars': 0,
     'unused-imports/no-unused-imports': 'error',

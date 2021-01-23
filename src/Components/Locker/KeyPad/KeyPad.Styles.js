@@ -17,6 +17,7 @@ export const KeyWrapper = styled.div`
   justify-content: center;
   align-items: center;
   font-size: 1.75rem;
+  font-weight: 500;
   cursor: pointer;
 `;
 

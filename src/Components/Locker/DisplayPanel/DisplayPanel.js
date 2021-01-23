@@ -1,17 +1,12 @@
 import PropTypes from 'prop-types';
 import { DisplayPanelWrapper } from './DisplayPanel.Styles';
 
-export const DisplayPanel = ({ currentInputs }) => (
+export const DisplayPanel = ({ currentInput }) => (
   <DisplayPanelWrapper>
-    {/* eslint-disable-next-line react/no-array-index-key */}
-    {currentInputs.map((i, index) => <span key={index}>{i}</span>)}
+    {currentInput.split('').map((i, index) => <span key={`${i}-${index}`}>{i}</span>)}
   </DisplayPanelWrapper>
 );
 
 DisplayPanel.propTypes = {
-  currentInputs: PropTypes.arrayOf(PropTypes.string),
-};
-
-DisplayPanel.defaultProps = {
-  currentInputs: [''],
+  currentInput: PropTypes.string.isRequired,
 };
