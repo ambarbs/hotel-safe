@@ -11,6 +11,11 @@ export const DisplayPanelWrapper = styled.div`
   height: 35%;
   margin-bottom: 6rem;
   font-size: 4rem;
+
+  @media only screen and (max-width: 576px) {
+    margin-bottom: 1rem;
+    height: 100%;
+  }
 `;
 
 export const DisplayWrapper = styled.div`
@@ -27,4 +32,7 @@ export const Indicator = styled.div`
   border: black 0.25rem solid;
   background-color: ${({ bgColor }) => bgColor};
   transition: background-color 500ms ease-out;
+  @media only screen and (max-width: 576px) {
+    width: 2rem;
+  }
 `;
