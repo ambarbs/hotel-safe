@@ -3,11 +3,11 @@ import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { KeyPadGrid, KeyWrapper } from './KeyPad.Styles';
 
+export const keys = ['1', '2', '3', '4', '5', '6', '7', '8', '9', 'CLR', '0', '⇨'];
+
 export const KeyPad = ({
   setCurrentInput, currentInput, setLockerPIN, lockerPIN, setLocked, locked,
 }) => {
-  const keys = ['1', '2', '3', '4', '5', '6', '7', '8', '9', 'CLR', '0', '⇨'];
-
   const handleCLick = (key) => {
     if (key === 'CLR') {
       setCurrentInput('');
@@ -67,8 +67,14 @@ export const KeyPad = ({
 KeyPad.propTypes = {
   currentInput: PropTypes.string.isRequired,
   lockerPIN: PropTypes.string.isRequired,
-  setCurrentInput: PropTypes.func.isRequired,
-  setLockerPIN: PropTypes.func.isRequired,
-  setLocked: PropTypes.func.isRequired,
+  setCurrentInput: PropTypes.func,
+  setLockerPIN: PropTypes.func,
+  setLocked: PropTypes.func,
   locked: PropTypes.bool.isRequired,
+};
+
+KeyPad.defaultProps = {
+  setCurrentInput: () => {},
+  setLockerPIN: () => {},
+  setLocked: () => {},
 };

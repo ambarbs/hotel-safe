@@ -20,7 +20,7 @@ export function Locker() {
         setLocked={setLocked}
         locked={locked}
       />
-      <RightItemsWrapper direction="column">
+      <RightItemsWrapper>
         <DisplayPanel currentInput={currentInput} />
         <Indicator bgColor={locked ? 'red' : 'green'} />
       </RightItemsWrapper>
