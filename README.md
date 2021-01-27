@@ -1,6 +1,16 @@
-# Getting Started with Create React App
+### Approach
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+1. Used _create-react_app_ to bootstrap the project.
+
+2. Used _styled-components_ to design the css and handle responsiveness(using media queries)
+   as it gives a more dynamic approach in handling css
+
+### Improvements
+
+1. Usage of TypeScript for better code quality with fewer  errors
+
+2. Increase in test case coverage
+
 
 ## Available Scripts
 
