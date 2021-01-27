@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/pin-locker/static/css/main.2ae47eeb.chunk.css",
+    "main.js": "/pin-locker/static/js/main.cb090b87.chunk.js",
+    "main.js.map": "/pin-locker/static/js/main.cb090b87.chunk.js.map",
+    "runtime-main.js": "/pin-locker/static/js/runtime-main.7ee9ba40.js",
+    "runtime-main.js.map": "/pin-locker/static/js/runtime-main.7ee9ba40.js.map",
+    "static/js/2.d19394d8.chunk.js": "/pin-locker/static/js/2.d19394d8.chunk.js",
+    "static/js/2.d19394d8.chunk.js.map": "/pin-locker/static/js/2.d19394d8.chunk.js.map",
+    "static/js/3.2d0a60d5.chunk.js": "/pin-locker/static/js/3.2d0a60d5.chunk.js",
+    "static/js/3.2d0a60d5.chunk.js.map": "/pin-locker/static/js/3.2d0a60d5.chunk.js.map",
+    "index.html": "/pin-locker/index.html",
+    "static/css/main.2ae47eeb.chunk.css.map": "/pin-locker/static/css/main.2ae47eeb.chunk.css.map",
+    "static/js/2.d19394d8.chunk.js.LICENSE.txt": "/pin-locker/static/js/2.d19394d8.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7ee9ba40.js",
+    "static/js/2.d19394d8.chunk.js",
+    "static/css/main.2ae47eeb.chunk.css",
+    "static/js/main.cb090b87.chunk.js"
+  ]
+}
